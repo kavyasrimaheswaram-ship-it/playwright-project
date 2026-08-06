@@ -1,0 +1,3 @@
+Alert is  visible
+ Your order has been placed!
+ Your order has been placed!

@@ -1,0 +1,292 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "F:\\Kavya\\Project_Playwright\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "F:\\Kavya\\Project_Playwright\\playwright.config.ts",
+    "rootDir": "F:/Kavya/Project_Playwright/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "F:/Kavya/Project_Playwright/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "F:/Kavya/Project_Playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/login.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ],
+      [
+        "F:\\Kavya\\Project_Playwright\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.0",
+    "workers": 12,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "login.spec.ts",
+      "file": "login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Add to cart_05",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 24061,
+                  "error": {
+                    "message": "Error: page.waitForNavigation: Test ended.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================",
+                    "stack": "Error: page.waitForNavigation: Test ended.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n    at addToCartPage.successMessage (F:\\Kavya\\Project_Playwright\\pages\\addToCartPage.ts:94:19)\n    at F:\\Kavya\\Project_Playwright\\tests\\login.spec.ts:117:37",
+                    "location": {
+                      "file": "F:\\Kavya\\Project_Playwright\\pages\\addToCartPage.ts",
+                      "column": 19,
+                      "line": 94
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\addToCartPage.ts:94\n\n\u001b[0m \u001b[90m 92 |\u001b[39m     }\n \u001b[90m 93 |\u001b[39m     \u001b[36masync\u001b[39m successMessage() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 94 |\u001b[39m         \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForNavigation()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 95 |\u001b[39m         \u001b[36mconst\u001b[39m msg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'h1.page-title'\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m 96 |\u001b[39m         console\u001b[33m.\u001b[39mlog(msg)\u001b[33m;\u001b[39m\n \u001b[90m 97 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "F:\\Kavya\\Project_Playwright\\pages\\addToCartPage.ts",
+                        "column": 19,
+                        "line": 94
+                      },
+                      "message": "Error: page.waitForNavigation: Test ended.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n\n\u001b[90m   at \u001b[39m..\\pages\\addToCartPage.ts:94\n\n\u001b[0m \u001b[90m 92 |\u001b[39m     }\n \u001b[90m 93 |\u001b[39m     \u001b[36masync\u001b[39m successMessage() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 94 |\u001b[39m         \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForNavigation()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 95 |\u001b[39m         \u001b[36mconst\u001b[39m msg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'h1.page-title'\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m 96 |\u001b[39m         console\u001b[33m.\u001b[39mlog(msg)\u001b[33m;\u001b[39m\n \u001b[90m 97 |\u001b[39m\u001b[0m\n\u001b[2m    at addToCartPage.successMessage (F:\\Kavya\\Project_Playwright\\pages\\addToCartPage.ts:94:19)\u001b[22m\n\u001b[2m    at F:\\Kavya\\Project_Playwright\\tests\\login.spec.ts:117:37\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Alert is  visible\n"
+                    },
+                    {
+                      "text": " Your order has been placed!\n"
+                    },
+                    {
+                      "text": " Your order has been placed!\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-06T17:36:45.588Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "F:\\Kavya\\Project_Playwright\\test-results\\login-Add-to-cart-05-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "F:\\Kavya\\Project_Playwright\\test-results\\login-Add-to-cart-05-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "F:\\Kavya\\Project_Playwright\\test-results\\login-Add-to-cart-05-chromium\\video.webm"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "F:\\Kavya\\Project_Playwright\\pages\\addToCartPage.ts",
+                    "column": 19,
+                    "line": 94
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3613,
+                  "error": {
+                    "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://ecommerce-playground.lambdatest.io/index.php?route=account/login\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://ecommerce-playground.lambdatest.io/index.php?route=account/login\", waiting until \"load\"\u001b[22m\n\n    at F:\\Kavya\\Project_Playwright\\tests\\login.spec.ts:94:16",
+                    "location": {
+                      "file": "F:\\Kavya\\Project_Playwright\\tests\\login.spec.ts",
+                      "column": 16,
+                      "line": 94
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 92 |\u001b[39m     \u001b[36mconst\u001b[39m register \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRegisterPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 93 |\u001b[39m     \u001b[36mconst\u001b[39m addtocart \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m addToCartPage(page)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 94 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m`${baseURL}route=account/login`\u001b[39m)\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 95 |\u001b[39m     \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mlogin(email\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 96 |\u001b[39m     \u001b[36mawait\u001b[39m homepage\u001b[33m.\u001b[39mclickOnMenu()\u001b[33m;\u001b[39m\n \u001b[90m 97 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mawait\u001b[39m addtocart\u001b[33m.\u001b[39merrorMessageCart()) {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "F:\\Kavya\\Project_Playwright\\tests\\login.spec.ts",
+                        "column": 16,
+                        "line": 94
+                      },
+                      "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://ecommerce-playground.lambdatest.io/index.php?route=account/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 92 |\u001b[39m     \u001b[36mconst\u001b[39m register \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRegisterPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 93 |\u001b[39m     \u001b[36mconst\u001b[39m addtocart \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m addToCartPage(page)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 94 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m`${baseURL}route=account/login`\u001b[39m)\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 95 |\u001b[39m     \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mlogin(email\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 96 |\u001b[39m     \u001b[36mawait\u001b[39m homepage\u001b[33m.\u001b[39mclickOnMenu()\u001b[33m;\u001b[39m\n \u001b[90m 97 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mawait\u001b[39m addtocart\u001b[33m.\u001b[39merrorMessageCart()) {\u001b[0m\n\u001b[2m    at F:\\Kavya\\Project_Playwright\\tests\\login.spec.ts:94:16\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-08-06T17:37:11.881Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "F:\\Kavya\\Project_Playwright\\test-results\\login-Add-to-cart-05-chromium-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "F:\\Kavya\\Project_Playwright\\test-results\\login-Add-to-cart-05-chromium-retry1\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "F:\\Kavya\\Project_Playwright\\tests\\login.spec.ts",
+                    "column": 16,
+                    "line": 94
+                  }
+                },
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 26595,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\" Your order has been placed!\"\u001b[39m\nReceived string:    \u001b[31m\"Confirm Order\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\" Your order has been placed!\"\u001b[39m\nReceived string:    \u001b[31m\"Confirm Order\"\u001b[39m\n    at F:\\Kavya\\Project_Playwright\\tests\\login.spec.ts:119:21",
+                    "location": {
+                      "file": "F:\\Kavya\\Project_Playwright\\tests\\login.spec.ts",
+                      "column": 21,
+                      "line": 119
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 117 |\u001b[39m     \u001b[36mconst\u001b[39m message \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m addtocart\u001b[33m.\u001b[39msuccessMessage()\u001b[33m;\u001b[39m\n \u001b[90m 118 |\u001b[39m     expect(message)\u001b[33m.\u001b[39mtoContain(\u001b[32m\" Your order has been placed!\"\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 119 |\u001b[39m\n \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 120 |\u001b[39m\n \u001b[90m 121 |\u001b[39m\n \u001b[90m 122 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "F:\\Kavya\\Project_Playwright\\tests\\login.spec.ts",
+                        "column": 21,
+                        "line": 119
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\" Your order has been placed!\"\u001b[39m\nReceived string:    \u001b[31m\"Confirm Order\"\u001b[39m\n\n\u001b[0m \u001b[90m 117 |\u001b[39m     \u001b[36mconst\u001b[39m message \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m addtocart\u001b[33m.\u001b[39msuccessMessage()\u001b[33m;\u001b[39m\n \u001b[90m 118 |\u001b[39m     expect(message)\u001b[33m.\u001b[39mtoContain(\u001b[32m\" Your order has been placed!\"\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 119 |\u001b[39m\n \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 120 |\u001b[39m\n \u001b[90m 121 |\u001b[39m\n \u001b[90m 122 |\u001b[39m\u001b[0m\n\u001b[2m    at F:\\Kavya\\Project_Playwright\\tests\\login.spec.ts:119:21\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Alert is  visible\n"
+                    },
+                    {
+                      "text": "Confirm Order\n"
+                    },
+                    {
+                      "text": "Confirm Order\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2026-08-06T17:37:17.434Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "F:\\Kavya\\Project_Playwright\\test-results\\login-Add-to-cart-05-chromium-retry2\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "F:\\Kavya\\Project_Playwright\\test-results\\login-Add-to-cart-05-chromium-retry2\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "F:\\Kavya\\Project_Playwright\\test-results\\login-Add-to-cart-05-chromium-retry2\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "F:\\Kavya\\Project_Playwright\\tests\\login.spec.ts",
+                    "column": 21,
+                    "line": 119
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-fa2ae876b41564f53746",
+          "file": "login.spec.ts",
+          "line": 88,
+          "column": 6
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-06T17:36:44.810Z",
+    "duration": 60636.115,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
