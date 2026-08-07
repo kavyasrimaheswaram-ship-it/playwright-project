@@ -85,7 +85,7 @@ test('Register_Test_04', async ({ page, baseURL }, testInfo) => {
     }
 });
 
-test("Add to cart_05", async ({ page, baseURL }) => {
+test.only("Add to cart_05", async ({ page, baseURL }) => {
     const login = new LoginPage(page);
     const homepage = new HomePage(page);
     //const payment = new PaymentPage(page);
@@ -115,6 +115,7 @@ test("Add to cart_05", async ({ page, baseURL }) => {
     await addtocart.clickAgree();
     await addtocart.clickContinue();
     await addtocart.clickConfirmOrder();
+    await page.waitForTimeout(4000);
     const message = await addtocart.successMessage();
     console.log(message)
     expect(message).toContain(" Your order has been placed!")

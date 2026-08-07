@@ -9,7 +9,7 @@
     "rootDir": "F:/Kavya/Project_Playwright/tests",
     "failOnFlakyTests": false,
     "forbidOnly": false,
-    "fullyParallel": false,
+    "fullyParallel": true,
     "globalSetup": null,
     "globalTeardown": null,
     "globalTimeout": 0,
@@ -83,214 +83,6 @@
       "line": 0,
       "specs": [
         {
-          "title": "Login_Test_01",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [
-                {
-                  "type": "Test Case Name",
-                  "description": "User Login Module - Success"
-                }
-              ],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 7176,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-07T09:47:52.837Z",
-                  "annotations": [
-                    {
-                      "type": "Test Case Name",
-                      "description": "User Login Module - Success"
-                    }
-                  ],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "F:\\Kavya\\Project_Playwright\\test-results\\login-Login-Test-01-chromium\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "41d3fd2474a19feb00a1-7b12ba941c5f387725d2",
-          "file": "login.spec.ts",
-          "line": 12,
-          "column": 5
-        },
-        {
-          "title": "Login_Error_Test_02",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [
-                {
-                  "type": "Test Case Name",
-                  "description": "Login with invalid credentials and message is :   Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour."
-                }
-              ],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 5986,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": " Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-07T09:48:01.301Z",
-                  "annotations": [
-                    {
-                      "type": "Test Case Name",
-                      "description": "Login with invalid credentials and message is :   Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour."
-                    }
-                  ],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "F:\\Kavya\\Project_Playwright\\test-results\\login-Login-Error-Test-02-chromium\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "41d3fd2474a19feb00a1-a81ccdf1fe0a706dad0b",
-          "file": "login.spec.ts",
-          "line": 26,
-          "column": 5
-        },
-        {
-          "title": "Register_Error_Test_03",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [
-                {
-                  "type": "Test Case Name",
-                  "description": "Register user without providing details and the message is Warning: You must agree to the Privacy Policy!"
-                }
-              ],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 6980,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-07T09:48:07.324Z",
-                  "annotations": [
-                    {
-                      "type": "Test Case Name",
-                      "description": "Register user without providing details and the message is Warning: You must agree to the Privacy Policy!"
-                    }
-                  ],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "F:\\Kavya\\Project_Playwright\\test-results\\login-Register-Error-Test-03-chromium\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "41d3fd2474a19feb00a1-2cd4c8eac06819c5b117",
-          "file": "login.spec.ts",
-          "line": 45,
-          "column": 5
-        },
-        {
-          "title": "Register_Test_04",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [
-                {
-                  "type": "Register Test Case",
-                  "description": ":  Warning: E-Mail Address is already registered!"
-                }
-              ],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 6749,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "error\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-07T09:48:14.338Z",
-                  "annotations": [
-                    {
-                      "type": "Register Test Case",
-                      "description": ":  Warning: E-Mail Address is already registered!"
-                    }
-                  ],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "F:\\Kavya\\Project_Playwright\\test-results\\login-Register-Test-04-chromium\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "41d3fd2474a19feb00a1-187dc511ed5e3b81f438",
-          "file": "login.spec.ts",
-          "line": 60,
-          "column": 5
-        },
-        {
           "title": "Add to cart_05",
           "ok": true,
           "tags": [],
@@ -306,7 +98,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 21388,
+                  "duration": 24266,
                   "errors": [],
                   "stdout": [
                     {
@@ -321,7 +113,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-08-07T09:48:21.121Z",
+                  "startTime": "2026-08-07T09:57:00.161Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -338,16 +130,16 @@
           "id": "41d3fd2474a19feb00a1-fa2ae876b41564f53746",
           "file": "login.spec.ts",
           "line": 88,
-          "column": 5
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-08-07T09:47:52.146Z",
-    "duration": 51147.032,
-    "expected": 5,
+    "startTime": "2026-08-07T09:56:59.491Z",
+    "duration": 26098.546,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

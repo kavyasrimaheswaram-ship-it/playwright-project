@@ -32,7 +32,7 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
      baseURL:"https://ecommerce-playground.lambdatest.io/index.php?",
-    headless: true,
+    headless: false,
     screenshot: "on",
     video: "retain-on-failure",
  
