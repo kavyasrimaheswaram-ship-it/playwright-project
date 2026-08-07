@@ -116,6 +116,7 @@ test("Add to cart_05", async ({ page, baseURL }) => {
     await addtocart.clickContinue();
     await addtocart.clickConfirmOrder();
     const message = await addtocart.successMessage();
+    console.log(message)
     expect(message).toContain(" Your order has been placed!")
 
 
