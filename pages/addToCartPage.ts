@@ -29,12 +29,19 @@ export default class addToCartPage {
             await this.page.getByRole('link', { name: 'Headphones' }).click(),
             await this.page.getByRole('heading', { level: 4, name: 'HTC Touch HD' }).click(),
             await this.page.getByRole('button', { name: 'Add to Cart' }).click(),
-            await this.page.getByRole('button', { name: 'Close' }).waitFor({ state: 'visible' }),
-            await this.page.getByRole('button', { name: 'Close' }).click({ force: true }),
+         
+        ])
+    }
+    async productCheck(){
+         const closebutton = this.page.locator("//*[@id='notification-box-top']/div/div[1]/button/span");
+            await closebutton.waitFor({ state: 'visible' });
+            await closebutton.scrollIntoViewIfNeeded();
+            await closebutton.click();
+           // await this.page.getByRole('button', { name: 'Close' }).waitFor({ state: 'visible' }),
+           // await this.page.getByRole('button', { name: 'Close' }).click({ force: true }),
             await this.page.locator('a[href="#cart-total-drawer"]').nth(1).click(),
             await this.page.getByRole('button', { name: 'Checkout' }).waitFor({ state: 'visible' }),
             await this.page.getByRole('button', { name: 'Checkout' }).click()
-        ])
     }
 
     async productQuatityUpdate() {

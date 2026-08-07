@@ -85,7 +85,7 @@ test('Register_Test_04', async ({ page, baseURL }, testInfo) => {
     }
 });
 
-test.only("Add to cart_05", async ({ page, baseURL }) => {
+test("Add to cart_05", async ({ page, baseURL }) => {
     const login = new LoginPage(page);
     const homepage = new HomePage(page);
     //const payment = new PaymentPage(page);
@@ -103,6 +103,7 @@ test.only("Add to cart_05", async ({ page, baseURL }) => {
 
     await addtocart.clickMegaMenu();
     await addtocart.productAddToCart();
+    await addtocart.productCheck();
     await addtocart.productQuatityUpdate();
     await addtocart.paymentAddress("Test");
     await register.enterFirstName("K");
