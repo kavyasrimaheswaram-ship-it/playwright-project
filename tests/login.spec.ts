@@ -85,7 +85,7 @@ test('Register_Test_04', async ({ page, baseURL }, testInfo) => {
     }
 });
 
-test.only("Add to cart_05", async ({ page, baseURL }) => {
+test("Add to cart_05", async ({ page, baseURL }) => {
     const login = new LoginPage(page);
     const homepage = new HomePage(page);
     //const payment = new PaymentPage(page);
